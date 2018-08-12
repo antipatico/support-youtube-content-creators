@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Support Youtube Content Creators
 // @author       antipatico 
-// @version      0.2-beta
+// @version      0.2.2-beta
 // @description  Whitelisting your loved content creators videos from your ADBlocker is now as easy as a click! Tested with Firefox + uBlock Origin + Violentmonkey.
 // @homepageURL  https://github.com/antipatico/support-youtube-content-creators
 // @updateURL    https://raw.githubusercontent.com/antipatico/support-youtube-content-creators/master/SupportYoutubeContentCreators.js
@@ -17,7 +17,7 @@
 /*
 
 VERY REASONABLE LICENSE FOR SOURCE CODE version 1
-AUTHOR antipatio (github.com/antipatico)
+AUTHOR antipatico (github.com/antipatico)
 SOFTWARE support-youtube-content-creators
 YEAR 2018
 

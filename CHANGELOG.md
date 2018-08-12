@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2-beta
+* Fixed typo in license
+
 ## 0.2.1-beta
 * Changed license to the VRLFSC v1
 

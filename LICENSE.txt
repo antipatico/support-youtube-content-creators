@@ -1,5 +1,5 @@
 VERY REASONABLE LICENSE FOR SOURCE CODE version 1
-AUTHOR antipatio (github.com/antipatico)
+AUTHOR antipatico (github.com/antipatico)
 SOFTWARE support-youtube-content-creators
 YEAR 2018
 
