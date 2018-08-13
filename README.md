@@ -2,27 +2,21 @@
 Whitelist your favorite YoutTube Content Creators from uBlock (Origin) with a click!
 ## How-To
 ### Install
-* Install the script in *Whatever*monkey
-  1. _Step 1 for **Violentmonkey**_ 
-![Step 1 for Violentmonkey](https://i.imgur.com/BNjmwtH.png)
-  2. _Step 2 for **Violentmonkey**_
-![Step 2 for Violentmonkey](https://i.imgur.com/HFnKHPr.png)
-  3. Paste the code and save
-* Add `youtube.com/*#support` to your adblocker whitelist
-  1. _Step 1 for **uBlock Origins**_
-![Step 1 for uBlock](https://i.imgur.com/v6LxcZo.png)
-  2. _Step 2 for **uBlock Origins**_
-![Step 2 for uBlock](https://i.imgur.com/8L6DpkX.png)
+0. Install Firefox + uBlock Origin (it should work on other browsers / adblockers, it's not tested tho)
+1. Install [Violentmonkey](https://violentmonkey.github.io/) (it should work also with Tampermonkey, also not tested)
+2. Open Violentmonkey's **dashboard** and click on the **Add (+) button**.
+3. Select **Install from URL** and paste in
+```
+https://raw.githubusercontent.com/antipatico/support-youtube-content-creators/master/SupportYoutubeContentCreators.js
+```
+4. Open uBlock Origin's dashboard and add `youtube.com/*#support` to your whitelist.
 
-## Use
-At this point a black heart (like this => 🖤), should appear near (nearly) every YouTube channel name.
-![Papa franku blacklisted](https://i.imgur.com/QwgyQXz.jpg)
-Click it to whitelist the channel, the page will refresh (with ADs, yayy), and the heart will turn orange (like this one => 🧡).
-![Papa franku Whitelisted](https://i.imgur.com/awhZQxQ.jpg)
-
-### Why orange and not red?
-First it is the Dutch color, second red is communist.
-JK, for some reason red heart was glitched on Linux so I picked the closest one to red IMO.
+## Usage
+1. Open a video of a content creator you want to whitelist
+2. Click on the Violentmonkey button
+3. Click on `Script commands` and the `[SYCC] Toggle whitelist for current Content Creator`
+4. ???
+5. Profit
 
 ### Architectures Tested
 * Linux + Firefox + uBlock + Violentmonkey

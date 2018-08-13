@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3-beta
+* Removed jQuery dependency (now using document.querySelector)
+* Removed DOM elements injection (now using Violentmonkey's commands)
+* Removed DOM elements update hooks
+* Refactored code in modules
+* Colored logs
+* Custom tag for whitelisted pages
+* Clear whitelist command
+
 ## 0.2.2-beta
 * Fixed typo in license
 
