@@ -1,7 +1,7 @@
 VERY REASONABLE LICENSE FOR SOURCE CODE version 1
 AUTHOR antipatico (github.com/antipatico)
 SOFTWARE support-youtube-content-creators
-YEAR 2018
+YEAR 2018-2019
 
 This "program" was created by antipatico (github.com/antipatico), thus all the
 rights are holded by him.
@@ -31,4 +31,4 @@ The program doesn't contain any backdoor (as far as I know), and I'm working on
 it on my spare time, thus the software comes with NO WARRANTY.
 Take in consideration the possibility to offer me a beer.
 
-2018 - All Wrongs Reversed
+2019 - All Wrongs Reversed

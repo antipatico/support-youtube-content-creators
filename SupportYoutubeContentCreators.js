@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Support Youtube Content Creators
 // @author       antipatico 
-// @version      0.3-beta
+// @version      0.4
 // @description  Whitelisting your loved content creators videos from your ADBlocker is now as easy as a click! Tested with Firefox + uBlock Origin + Violentmonkey.
 // @homepageURL  https://github.com/antipatico/support-youtube-content-creators
 // @updateURL    https://raw.githubusercontent.com/antipatico/support-youtube-content-creators/master/SupportYoutubeContentCreators.js
@@ -19,7 +19,7 @@
 VERY REASONABLE LICENSE FOR SOURCE CODE version 1
 AUTHOR antipatico (github.com/antipatico)
 SOFTWARE support-youtube-content-creators
-YEAR 2018
+YEAR 2018-2019
 
 This "program" was created by antipatico (github.com/antipatico), thus all the
 rights are holded by him.
@@ -176,7 +176,7 @@ let core = {
     } else if (core.inUserPage()) {
       channelURL = document.querySelector("meta[property='og:url']").content;
     } else if (core.inVideoPage()) {
-      let DOMel = document.querySelector("yt-formatted-string#owner-name").firstChild;
+      let DOMel = document.querySelector("div#upload-info.ytd-video-owner-renderer").querySelector("a");
       if(DOMel == undefined) {
         log.error("Can't find channel URL inside video page"); // with new hooks it should never happen.
         return null;
@@ -202,8 +202,10 @@ let core = {
 
     /* Disable redirecting in non-content page */
     if(core.inUserPage() && !core.inFeaturedPage()) {
+      log.debug("Not in content page");
       return;
     }
+
 
     log.debug("URL not whitelisted (yet), starting redirectStep!");
     let cc = core.getContentCreator();
@@ -227,7 +229,7 @@ let core = {
       data.whitelist.remove(cc);
       refreshURL = document.location.href.replace(data.htag, "");
     } else {
-      log.debug("Adding content creator from whitelist");
+      log.debug("Adding content creator to whitelist");
       data.whitelist.append(cc);
       refreshURL = document.location.href + data.htag;
     }
